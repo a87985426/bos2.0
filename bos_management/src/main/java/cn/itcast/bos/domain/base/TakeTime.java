@@ -10,6 +10,8 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import org.springframework.data.annotation.Transient;
+
 /**
  * @description:收派时间管理
  */
@@ -46,6 +48,10 @@ public class TakeTime {
 	private String operator; // 操作员
 	@Column(name = "C_OPERATING_COMPANY")
 	private String operatingCompany; // 操作单位
+	@Transient
+	public String getInfo(){
+		return name+"("+company+")";
+	}
 
 	public Integer getId() {
 		return id;

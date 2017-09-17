@@ -35,8 +35,7 @@ import cn.itcast.bos.domain.base.Area;
 import cn.itcast.bos.service.IAreaService;
 import cn.itcast.bos.utils.PinYin4jUtils;
 
-import com.opensymphony.xwork2.ActionSupport;
-import com.opensymphony.xwork2.ModelDriven;
+
 @Controller
 @Scope("protopyte")
 @Namespace("/")

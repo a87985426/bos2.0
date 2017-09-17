@@ -7,6 +7,7 @@ import java.util.Map;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Join;
 import javax.persistence.criteria.JoinType;
 import javax.persistence.criteria.Predicate;
@@ -15,6 +16,7 @@ import javax.servlet.Servlet;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.struts2.ServletActionContext;
+import org.apache.struts2.components.Set;
 import org.apache.struts2.convention.annotation.Action;
 import org.apache.struts2.convention.annotation.Namespace;
 import org.apache.struts2.convention.annotation.ParentPackage;
@@ -113,6 +115,14 @@ public class CourierAction extends ActionSupport implements ModelDriven<Courier>
 		String[] split = ids.split(":");
 		
 		courierServiceImpl.delete(split);
+		return SUCCESS;
+		
+	}
+	@Action(value="courier_findnoassociation",results={@Result(name="success",type="json")})
+	public String findNoAssocation(){
+		
+		List<Courier> list = courierServiceImpl.findNoAssocation();
+		ActionContext.getContext().getValueStack().push(list);
 		return SUCCESS;
 		
 	}

@@ -126,6 +126,7 @@
 					if(rows.length==1){
 						// 只选择了一个定区
 						// 弹出定区关联快递员 窗口 
+						$("#courierFixedAreaId").val(rows[0].id)
 						$("#courierWindow").window('open');
 					}else{
 						// 没有选中定区，或者选择 了多个定区
@@ -237,6 +238,13 @@
 					$("#associationSelect option").attr("selected","selected");
 					// 提交表单
 					$("#customerForm").submit();
+				})
+				$('#associationCourierBtn').click(function(){
+					if($('#courierForm').form('validate')){
+						$('#courierForm').submit();
+					}else{
+						$.message.alert('警告框','输入了非法字符!','warning')
+					}
 				})
 			});
 		
@@ -491,7 +499,7 @@
 								<!-- 存放定区编号 -->
 								<input type="hidden" name="id" id="courierFixedAreaId" />
 								<input type="text" name="courierId" class="easyui-combobox" required="true" 
-									data-options="url:'../../data/courier.json',
+									data-options="url:'../../courier_findnoassociation.action',
 										valueField:'id',textField:'info'"/>
 							</td>
 						</tr>
@@ -499,8 +507,8 @@
 							<td>选择收派时间</td>
 							<td>
 								<input type="text" name="takeTimeId" class="easyui-combobox" required="true"
-									data-options="url:'../../data/take_time.json', 
-									valueField:'id',textField:'name'" />
+									data-options="url:'../../taketime_findall.action', 
+									valueField:'id',textField:'info'" />
 							</td>
 						</tr>
 						<tr>
