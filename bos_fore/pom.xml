@@ -13,4 +13,29 @@
   <description>物流前端系统</description>
   
   
+  <dependencies>
+  	<dependency>
+  		<groupId>cn.itcast.maven</groupId>
+  		<artifactId>crm_domain</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>cn.itcast.maven</groupId>
+  		<artifactId>bos_domain</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
+  
+  <build>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.tomcat.maven</groupId>
+  			<artifactId>tomcat7-maven-plugin</artifactId>
+  			<version>2.1</version>
+  			<configuration>
+  				<port>9001</port>
+  			</configuration>
+  		</plugin>
+  	</plugins>
+  </build>
 </project>

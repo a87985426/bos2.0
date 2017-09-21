@@ -42,4 +42,22 @@ public class CustomerServiceImpl implements ICustomerService{
 		}
 	}
 
+	@Override
+	public void saveCustomer(Customer customer) {
+		// TODO Auto-generated method stub
+		customerRepository.save(customer);
+	}
+
+	@Override
+	public Customer findCustomerByTelephone(String telephone) {
+		// TODO Auto-generated method stub
+		return customerRepository.findByTelephone(telephone);
+	}
+
+	@Override
+	public void updateType(String telephone) {
+		// TODO Auto-generated method stub
+		customerRepository.updateType(telephone);
+	}
+
 }

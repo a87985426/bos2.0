@@ -43,7 +43,17 @@ public class CustomerTest {
 		List<Customer> list = cusotmerRepository.findByFixedAreaNum("dq001");
 		System.out.println(list);
 	}
+	@Test
 	public void test2() {
-		customerServiceImpl.updataAssocation("dq001", null);;
+		Customer customer = WebClient.create("http://localhost:9080/crm_management/services/customerService/findCustomerByTelephone/13812345678")
+		.accept(MediaType.APPLICATION_JSON).get(Customer.class);
+		System.out.println(customer);
+//		Customer customer = cusotmerRepository.findByTelephone("13812345678");
+//		System.out.println(customer);
+	}
+	@Test
+	public void test3(){
+		WebClient.create("http://localhost:9080/crm_management/services/customerService/updateType/13812345678")
+		.put(null);
 	}
 }

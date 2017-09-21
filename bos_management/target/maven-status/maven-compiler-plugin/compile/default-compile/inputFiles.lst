@@ -1,3 +1,6 @@
+D:\bos2.0\bos2.0\bos_management\src\main\java\cn\itcast\bos\service\impl\PromotionServiceImpl.java
+D:\bos2.0\bos2.0\bos_management\src\main\java\cn\itcast\bos\service\IPromotionService.java
+D:\bos2.0\bos2.0\bos_management\src\main\java\cn\itcast\bos\web\action\ImageAction.java
 D:\bos2.0\bos2.0\bos_management\src\main\java\cn\itcast\bos\dao\CourierRepository.java
 D:\bos2.0\bos2.0\bos_management\src\main\java\cn\itcast\bos\service\ICourierService.java
 D:\bos2.0\bos2.0\bos_management\src\main\java\cn\itcast\bos\utils\PinYin4jUtils.java
@@ -15,13 +18,16 @@ D:\bos2.0\bos2.0\bos_management\src\main\java\cn\itcast\bos\service\impl\FixedAr
 D:\bos2.0\bos2.0\bos_management\src\main\java\cn\itcast\bos\service\IAreaService.java
 D:\bos2.0\bos2.0\bos_management\src\main\java\cn\itcast\bos\domain\base\SubArchive.java
 D:\bos2.0\bos2.0\bos_management\src\main\java\cn\itcast\bos\domain\base\TakeTime.java
+D:\bos2.0\bos2.0\bos_management\src\main\java\cn\itcast\bos\web\action\PromotionAction.java
 D:\bos2.0\bos2.0\bos_management\src\main\java\cn\itcast\bos\web\action\AreaAction.java
 D:\bos2.0\bos2.0\bos_management\src\main\java\cn\itcast\bos\dao\IStandardDao.java
 D:\bos2.0\bos2.0\bos_management\src\main\java\cn\itcast\bos\domain\base\FixedArea.java
+D:\bos2.0\bos2.0\bos_management\src\main\java\cn\itcast\bos\dao\PromotionRepository.java
 D:\bos2.0\bos2.0\bos_management\src\main\java\cn\itcast\bos\web\action\FixedAreaAction.java
 D:\bos2.0\bos2.0\bos_management\src\main\java\cn\itcast\bos\service\impl\AreaServiceImpl.java
 D:\bos2.0\bos2.0\bos_management\src\main\java\cn\itcast\bos\domain\base\Area.java
 D:\bos2.0\bos2.0\bos_management\src\main\java\cn\itcast\bos\domain\base\Vehicle.java
+D:\bos2.0\bos2.0\bos_management\src\main\java\cn\itcast\bos\domain\take_delivery\Promotion.java
 D:\bos2.0\bos2.0\bos_management\src\main\java\cn\itcast\bos\service\impl\TakeTimeServiceImpl.java
 D:\bos2.0\bos2.0\bos_management\src\main\java\cn\itcast\bos\domain\base\Standard.java
 D:\bos2.0\bos2.0\bos_management\src\main\java\cn\itcast\bos\service\impl\StandardServiceImpl.java
